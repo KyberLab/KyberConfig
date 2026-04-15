@@ -9,8 +9,11 @@
 # mount -t 9p -o trans=virtio,version=9p2000.L,posixacl,cache=loose host /ws
 
 
+#QEMU_STORAGE_TYPE			:= none
 QEMU_GRAPHIC_TYPE			:= none
 QEMU_GRAPHIC_ARGS			:= -nographic
+
+#QEMU_SHARE_ENABLE			:= 0
 
 
 IMAGE_UBUNTU_UEFI_FW		:= QEMU_EFI.fd
@@ -33,5 +36,5 @@ IMAGE_RUN_ARGS				+= \
 	-drive if=pflash,format=raw,file=$(OUTPUT_ROOT_PATH)/$(IMAGE_UBUNTU_UEFI_DATA) \
 	-cdrom $(OUTPUT_ROOT_PATH)/$(IMAGE_UBUNTU_METADATA_ISO) \
 	-drive file=$(IMAGE_BOOT_BIN),format=qcow2,id=ubuntu,if=none \
-	-device virtio-blk,drive=ubuntu,bus=pcie.0,addr=0x01
+	-device virtio-blk,drive=ubuntu,bus=pcie.0
 
