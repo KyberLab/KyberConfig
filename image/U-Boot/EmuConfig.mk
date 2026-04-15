@@ -12,7 +12,7 @@ IMAGE_BOOT_BIN				?= $(OUTPUT_ROOT_PATH)/U-Boot.img
 IMAGE_UBOOT_BOOT_BIN		?= $(OUTPUT_ROOT_PATH)/Linux.bin
 
 
-IMAGE_PRE_RUN				+= \
+IMAGE_PRE_RUN				+= && \
 	$(call xprint_title,	"U-Boot Shell") && \
 	$(call xprint_notice,		"Type in \"booti 0x40200000 - 0x40000000\"")
 
