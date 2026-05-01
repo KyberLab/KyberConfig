@@ -25,5 +25,5 @@ IMAGE_RUN_ARGS				+= \
 	-drive if=pflash,format=raw,file=$(OUTPUT_ROOT_PATH)/$(IMAGE_EDK2_UEFI_PFLASH1) \
 	-cdrom $(OUTPUT_ROOT_PATH)/$(IMAGE_UBUNTU_METADATA_ISO) \
 	-drive file=$(OUTPUT_ROOT_PATH)/$(IMAGE_UBUNTU_SYSTEM),format=qcow2,id=ubuntu,if=none \
-	-device virtio-blk,drive=ubuntu,bus=pcie.0,addr=0x01
+	-device virtio-blk,drive=ubuntu
 
