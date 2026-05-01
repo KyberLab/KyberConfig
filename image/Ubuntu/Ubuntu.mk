@@ -14,7 +14,7 @@ IMAGE_BUILD_TYPE			:= Ubuntu
 
 # (Required) Fetch options
 IMAGE_FETCH_OPTS			:= 
-IMAGE_FETCH_URL				:= https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img:$(IMAGE_UBUNTU_BASE):4e797e3bab49b81629fd02a34fe45b07
+IMAGE_FETCH_URL				:= https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img:$(IMAGE_UBUNTU_BASE):0d8646d16b91372aec21c09cb19097c1
 IMAGE_FETCH_REF				:= 
 
 # (Optional) Patch options
