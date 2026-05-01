@@ -14,7 +14,7 @@ IMAGE_BUILD_TYPE			:= Ubuntu
 
 # (Required) Fetch options
 IMAGE_FETCH_OPTS			:= 
-IMAGE_FETCH_URL				:= https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img:$(IMAGE_UBUNTU_BASE):f1a64db84c980f24f0ff6e7bfbbf1084
+IMAGE_FETCH_URL				:= https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img:$(IMAGE_UBUNTU_BASE):51ea1f23dbaa094256af4ece45f5a599
 IMAGE_FETCH_URL				+= https://github.com/rohan-qemu/firmware/raw/master/bios/QEMU_EFI.fd:$(IMAGE_UBUNTU_UEFI_FW):b797ff2c1da88d15512e4b74a3ca1e6d
 IMAGE_FETCH_REF				:= 
 
