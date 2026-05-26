@@ -15,7 +15,7 @@ BUILD_TYPE_NUM				?= 3
 BUILD_TYPE_STR				?= test
 BUILD_VARIANT				?= Community
 
-IMAGE_BUILD_LIST			?= rCore KyberEmu
+IMAGE_BUILD_LIST			?= OpenSBI U-Boot Linux BusyBox BuildRoot Yocto rCore KyberEmu
 IMAGE_DEPEND_LIST			?= 
 
 BENCH_IMG_DEFAULT			?= $(BUILD_BOARD)
